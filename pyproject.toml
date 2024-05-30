@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "budget-manager"
+version = "0.1.0"
+description = "Budget manager with tg bot control"
+authors = ["smintank <assbestmail@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+
+
+[tool.poetry.dependencies]
+python = "^3.11"
+fastapi = "^0.108.0"
+uvicorn = {extras = ["standard"], version = "^0.25.0"}
+pydentic = {extras = ["email"], version = "^0.0.1.dev3"}
+sqlalchemy = {extras = ["asynio"], version = "^2.0.25"}
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^7.4.4"
+black = "^23.12.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
